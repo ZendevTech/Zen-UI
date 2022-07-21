@@ -11,7 +11,7 @@ const Button: FC<ButtonProps> = ({
     ...props
 }: ButtonProps) => {
     return (
-        <button disabled={disabled} onClick={onClick} {...props}>
+        <button disabled={disabled} onClick={onClick} {...props} className="bg-slate-500">
             {children}
         </button>
     );
