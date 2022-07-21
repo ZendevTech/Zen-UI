@@ -21,19 +21,19 @@
 npm install
 ```
 
-## Run tests
+## Run Tests
 
 ```sh
 npm run test
 ```
 
-## Build distributables
+## Build Distributables
 
 ```sh
 npm run build
 ```
 
-## Run formatter
+## Run Formatter
 
 ```sh
 npm run format
@@ -43,12 +43,13 @@ npm run format
 
 👤 **Owen Alexander**
 
-* Website: www.linkedin.com/in/owen-alexander-8620981b3
-* Github: [@oalexander-dev](https://github.com/oalexander-dev)
+-   Website: www.linkedin.com/in/owen-alexander-8620981b3
+-   Github: [@oalexander-dev](https://github.com/oalexander-dev)
 
 ## Show your support
 
 Give a ⭐️ if this project helped you!
 
-***
+---
+
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_

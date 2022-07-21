@@ -1,11 +1,13 @@
 {
   "name": "@zendevtech/zen-ui",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/ZendevTechnologies"
-  },
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "React component library for Zendev.",
   "main": "dist/cjs/index.js",
+  "homepage": "https://github.com/ZendevTech/Zen-UI#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ZendevTech/Zen-UI.git"
+  },
   "module": "dist/esm/index.js",
   "types": "./dist/index.d.ts",
   "files": [
@@ -13,22 +15,32 @@
   ],
   "scripts": {
     "build": "npm run build:postcss && export NODE_ENV=production && rollup -c",
-    "build:postcss": "npx postcss src/styles/index.src.css -o src/styles/index.css",
-    "format": "prettier --write ./src",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:postcss": "rm -d -r dist && npx postcss src/styles/index.src.css -o src/styles/index.css",
+    "format": "prettier --write .",
+    "deploy": "npm run format && npm run build && npm publish",
+    "test": "jest"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.18.9",
+    "@babel/preset-env": "^7.18.9",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.18.6",
     "@rollup/plugin-commonjs": "^22.0.1",
     "@rollup/plugin-node-resolve": "^13.3.0",
     "@rollup/plugin-typescript": "^8.3.3",
+    "@testing-library/react": "^13.3.0",
     "@trivago/prettier-plugin-sort-imports": "^3.3.0",
+    "@types/jest": "^28.1.6",
     "@types/react": "^18.0.15",
     "autoprefixer": "^10.4.7",
+    "babel-jest": "^28.1.3",
     "babel-loader": "^8.2.5",
     "cssnano": "^5.1.12",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^28.1.3",
+    "jest-environment-jsdom": "^28.1.3",
     "postcss": "^8.4.14",
     "postcss-cli": "^10.0.0",
     "prettier": "^2.7.1",
