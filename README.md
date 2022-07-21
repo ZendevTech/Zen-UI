@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to @oalexander-dev/zen-ui 👋</h1>
+<h1 align="center">Welcome to @zendevtech/zen-ui 👋</h1>
 <p>
   <a href="https://www.npmjs.com/package/@oalexander-dev/zen-ui" target="_blank">
     <img alt="GitHub package.json version" src="https://img.shields.io/github/package-json/v/oalexander-dev/zen-ui">
@@ -11,20 +11,32 @@
   </a>
 </p>
 
-> React component library for Zendev.
+> Lightweight, beautiful React components built for Zendev Technologies
 
-### 🏠 [Homepage](https://github.com/oalexander-dev/zen-ui)
+### 🏠 [Homepage](https://github.com/ZendevTech/Zen-UI)
 
-## Install
+## Install Dependencies
 
 ```sh
-npm install @oalexander-dev/zen-ui
+npm install
 ```
 
 ## Run tests
 
 ```sh
 npm run test
+```
+
+## Build distributables
+
+```sh
+npm run build
+```
+
+## Run formatter
+
+```sh
+npm run format
 ```
 
 ## Author
