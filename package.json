@@ -14,8 +14,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "npm run build:postcss && export NODE_ENV=production && rollup -c",
-    "build:postcss": "rm -d -r dist && npx postcss src/styles/index.src.css -o src/styles/index.css",
+    "build": "rm -d -r dist && npm run build:postcss && export NODE_ENV=production && rollup -c",
+    "build:postcss": "npx postcss src/styles/index.src.css -o src/styles/index.css",
     "format": "prettier --write .",
     "deploy": "npm run format && npm run build && npm publish",
     "test": "jest"

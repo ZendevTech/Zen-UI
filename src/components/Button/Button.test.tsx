@@ -5,6 +5,8 @@ import Button from './Button';
 
 describe('Button', () => {
     test('renders the Button component', () => {
-        render(<Button>Hello world</Button>);
+        const result = render(<Button>Hello world</Button>).findByText('Hello world');
+
+        expect(result).toBeTruthy();
     });
 });
